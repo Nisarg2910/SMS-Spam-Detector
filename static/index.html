@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="en">
+    <title>Spam Detecting Tool</title>
+    <head>
+        <link href="../static/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1 align=center>Spam Message Detector</centre></h1>
+            <h3 align=center>Please copy, paste the message in the provided text area to ascertain whether it is spam or not!</h3>
+            <form action="{{url_for('success')}}" method="POST">
+                <textarea title="Your information will be safe with us." placeholder="Enter Message please..." rows="10" cols="80" name="t1"></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
